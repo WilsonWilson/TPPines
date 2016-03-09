@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>T.P.Pines Crate&amp;Barrel Cristmas Tree Reserve Page</title>
+<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/dc305a4a-2acf-41d5-9c16-4e18cf2ca442.css"/>
+<link rel="stylesheet" href="css/styles.css">
+<script src="http://www.mymettle.com/tacboard/js/jquery-2.1.1.js"></script>
+</head>
+
+<body>
+
+
+<div class="form-container">
+    <div class="heading-contianer helv-n-bld">
+        <span class="helv-n-bld">9th Annual</span>Crate&amp;Barrel
+    </div>
+    <h1 class="helv-n-md">
+        Christmas Tree</br>
+        <span>&amp;</span> Wreath Sale
+    </h1>
+    <div class="time-date helv-n-md">
+    Thurs. December 3rd, 11am - 2pm
+    </div>
+    <div class="location helv-n-bld">
+        Outside by the Community Garden (next to the loading dock).
+    </div>
+    <p class="helv-n-xlt">
+    Freshly cut Fraiser Fir short needle trees, wreaths, and swags.
+Pick your own. There will be assistance in getting it on your vehicle.
+        <ul>
+            <li class="helv-n-xlt">Round Wreaths ranging from 18” to 48” : $20-$60 each</li>
+            <li class="helv-n-xlt">Swags, Boughs, and Candy Cane Shaped Wreaths</li>
+            <li class="helv-n-xlt">Various tree sizes ranging from 6’ to 10’ : $60-$90 each</li>
+        </ul>
+    </p>
+    <div class="free-boughs helv-n-md">
+        FREE Boughs! First come, first served!
+    </div>
+
+    <div class="order-now helv-n-bld">
+        Reserve your tree or wreath now: <font size="-1">(no payment required)</font>
+    </div>
+    <form method="POST" action="candbPHP.php" class="form-form">
+        <input class="input-field helv-n-xlt" placeholder="Your Name" type="text" name="name"><br>
+        <input class="input-field helv-n-xlt" placeholder="Your Email" type="text" name="email"><br><br />
+        <div class="tree-title helv-n-xlt">Please select your items below.</div>
+
+        <div class="select-row-container">
+            <div class="select-title-name helv-n-xlt">Tree :</div>
+            <div class="select-dropdown">
+                <select class="input-field select helv-n-xlt yesTree" name="tree">
+                    <option value="" disabled selected>select tree size</option>
+                    <option value="6-7 feet">6-7 feet - $60</option>
+                    <option value="7-8 feet">7-8 feet - $70</option>
+                    <option value="8-9 feet">8-9 feet - $80</option>
+                    <option value="9-10 feet">9-10 feet - $90</option>
+                </select>
+                <!--<input class="input-field helv-n-xlt qty treeQty" placeholder="qty" type="number" name="treeQty">-->
+            </div>
+        </div>
+        <div class="select-row-container">
+            <div class="select-title-name helv-n-xlt">Wreath :</div>
+            <div class="select-dropdown">
+                <select class="input-field select helv-n-xlt yesWreath" name="wreath" >
+                    <option value="" disabled selected>select wreath size</option>
+                    <option value="18 inches">18 inch - $20</option>
+                    <option value="24 inches">24 inch - $25</option>
+                    <option value="36 inches">36 inch - $40</option>
+                    <option value="48 inches">48 inch - $55</option>
+                </select>
+                <!--<input class="input-field helv-n-xlt qty wreathQty" placeholder="qty" type="number" name="wreathQty">-->
+            </div>
+        </div>
+
+        <div class="select-row-container" style="margin-top:18px;">
+            <div class="select-title-name"></div>
+            <div class="select-dropdown helv-n-xlt">
+                <div class="swagLabel">
+                    <input class="yesCandyCane" id="candyCane" type="checkbox" name="candyCane" value="Candy Cane Wreath">&emsp;<label for="candyCane" class="candyCaneLabel">Candy Cane - $20</label>
+                </div>
+                <!--<input class="input-field helv-n-xlt qty candyCaneQty" placeholder="qty" type="number" name="candyCaneQty">-->
+            </div>
+        </div>
+
+        <div class="select-row-container">
+            <div class="select-title-name"></div>
+            <div class="select-dropdown helv-n-xlt">
+                <div class="swagLabel">
+                    <input class="yesSwag" id="swag" type="checkbox" name="swag" value="Swag">&emsp;<label for="swag" >Swag - $15</label>
+                </div>
+                <!--<input class="input-field helv-n-xlt qty swagQty" placeholder="qty" type="number" name="swagQty">-->
+            </div>
+        </div>
+
+
+        <textarea class="input-field helv-n-xlt" placeholder="Comment, questions, and custom order info" name="comment" rows="3" cols="40"></textarea>
+        <br class="all"/>
+        <input class="submit" type="image" src="img/submit.png" value="SEND">
+    </form>
+
+    <div class="contact helv-n-xlt">
+     Please contact Michelle with any questions.<br/>
+
+        <a href="mailto:meems@mplatts.com">meems@mplatts.com</a>
+        &emsp; &emsp;
+        <a href="tel:773-255-0719">773.255.0719</a>
+
+    </div>
+</div><!--end form container-->
+
+<script type="text/javascript">
+/* Prevent auto-zoom on text input fields */
+var $viewportMeta = $('meta[name="viewport"]');
+$('input, select, textarea').bind('focus blur', function(event) {
+$viewportMeta.attr('content', 'width=device-width,initial-scale=1,maximum-scale=' +        (event.type == 'blur' ? 10 : 1));
+});
+    /*$(".yesTree").change(function() {
+      $(".treeQty").fadeIn(700);
+    });
+    $(".yesWreath").change(function() {
+      $(".wreathQty").fadeIn(700);
+    });
+    $('#candyCane').change(function() {
+      if ($(this).is(':checked')) {
+        $(".candyCaneQty").fadeIn(700);
+      } else {
+        $(".candyCaneQty").fadeOut(700);
+      }
+    });
+    $('#swag').change(function() {
+      if ($(this).is(':checked')) {
+        $(".swagQty").fadeIn(700);
+      } else {
+        $(".swagQty").fadeOut(700);
+      }
+    });*/
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70416197-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
